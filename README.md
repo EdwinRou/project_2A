@@ -26,7 +26,17 @@ Nous avons ensuite rajouté les variables correspondant à la moyenne win rates 
 
 
 
-## Description of our ML models :
+## Description des modèles de machine learning :
+Nous avons tout d'abord traité le jeu de données, notamment afin de remplacer les données manquantes.
+
+Nous avons utilisé une regression logistique étant donné que la variable à prédire est binaire. Nous avons obtenu une précision de 83%.
+
+Nous avons également fait des tests sur un modèle d'arbre de décision.
+Nous avons ensuite continué avec un modèle de random forest. Après avoir calibrer les hyperparamètres, nous avons obtenu une précision de 82%.
+
+Enjeu :
+
+Les joueurs peuvent quitter une « champ select » sans grande conséquence puisque la partie n’a pas encore démarré. Ainsi, le fait de pouvoir prédire le résultat avant même le début de la partie pourrait permettre d’éviter les parties a priori perdues d’avance, du fait d’une différence trop forte entre les deux équipes. 
 
 
 # Notebook Final
