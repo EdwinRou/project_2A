@@ -1,5 +1,5 @@
 # project_2A
-Projet d'informatique du cours "Python pour la datascience" de deuxième année de l'ENSAE.
+Projet d'informatique du cours "Python pour la datascience" de deuxième année de l'ENSAE
 (lien du Notebook final à la fin)
 
 Le but du projet est d'utiliser divers méthodes de machine learning afin de prédire le résultat d'une partie sur le jeu League of Legends, en utilisant les informations donné lors de la "champ select"(momment où chaque joueurs choisis son personnage pour la partie).
