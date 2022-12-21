@@ -6,7 +6,7 @@ Le but du projet est d'utiliser divers methodes de machine learning afin de pré
 ## Description du jeu League of Legends :
 
 Ce jeu se joue en 5 contre 5 sur une unique map, avec un Blue side et un Red side. Le jeu possède un très grand nombre de personnages différents, appelés champions.
-Les 5 joueurs d'une même équipe ont chacun un rôle différent : Top, Jngl, Mid, Carry, Support.
+Les 5 joueurs d'une même équipe ont chacun un rôle différent : Top, Jungle, Mid, Carry, Support.
 Lors de la "champ select" chaque joueur a un rôle prédeterminé et choisis son champion. Les pseudos et champions des 5 joueurs de chaque équipes sont visibles à la fin de celle-ci, quelques secondes avant le lancement d'une partie.
 Notre objectif est d'utiliser seulement ces paramètres et d'essayer de prédire le résultat de la partie.
 
@@ -14,8 +14,10 @@ Notre objectif est d'utiliser seulement ces paramètres et d'essayer de prédire
 
 Tout d'abord nous avons utilisé l'Api de Riot, l'éditeur du jeu, afin de construire une base de donnée de parties compétitves à haut elo.
 Ensuite nous avons utilisé des méthodes de scraping sur le site [https://www.leagueofgraphs.com/ ](https://www.leagueofgraphs.com/fr/) afin de récupérer des features intéressantes sur le profil des joueurs.
+Nous avons choisis d'utiliser le win rate sur le champion choisis, ainsi que le nombre de parties jouées avec le champions choisis.
 
 Nous avons donc contruit un dataframe de 3500 parties compétitives. Pour chaque partie, il y a le winrate de chaques joueurs sur le champion choisis ainsi que le nombre de partie joués avec ce champion.
+
 
 
 ## Description of our ML models :
