@@ -1,7 +1,12 @@
 # project_2A
 Projet d'info de deuxième année de l'ENSAE
 
-Le but du projet est d'utiliser divers methodes de machine learning afin de prédire le résultat d'une partie sur le jeu League of Legends, en utilisant les informations donné lors de la "champ select"(momment ou chaque joueurs choisis son personnage pour la partie).
+Le but du projet est d'utiliser divers méthodes de machine learning afin de prédire le résultat d'une partie sur le jeu League of Legends, en utilisant les informations donné lors de la "champ select"(momment où chaque joueurs choisis son personnage pour la partie).
+
+## Enjeu :
+
+Les joueurs peuvent quitter une « champ select » sans grande conséquence (beaucoup moins pénalisant qu'une défaite) puisque la partie n’a pas encore démarré. Ainsi, le fait de pouvoir prédire le résultat avant même le début de la partie pourrait permettre d’éviter les parties a priori perdues d’avance, du fait d’une différence trop forte entre les deux équipes.
+De plus le projet nous parraissait intéressant et utilisait beaucoup d'outils classique en data science (utilisation d'Api, scapping, etc).
 
 ## Description du jeu League of Legends :
 
@@ -20,13 +25,13 @@ Tout d'abord nous avons utilisé l'Api de Riot, l'éditeur du jeu, afin de const
 Ensuite nous avons utilisé des méthodes de scraping sur le site [https://www.leagueofgraphs.com/ ](https://www.leagueofgraphs.com/fr/) afin de récupérer des features intéressantes sur le profil des joueurs.
 Nous avons choisis d'utiliser le win rate sur le champion choisis, ainsi que le nombre de parties jouées avec le champions choisis.
 
-Nous avons donc contruit un dataframe de 3500 parties compétitives. Pour chaque partie, il y a le winrate de chaques joueurs sur le champion choisis ainsi que le nombre de partie joués avec ce champion.
+Nous avons donc contruit de cette manière un dataframe de 3500 parties compétitives. Pour chaque partie, il y a le winrate de chaques joueurs sur le champion choisis ainsi que le nombre de partie joués avec ce champion.
 
-Nous avons ensuite rajouté les variables correspondant à la moyenne win rates (taux de victoire) et la moyenne du nombre de parties pour chaque équipe : blue_winrates_avg et red_winrates_avg et blue_games_avg et red_games_avg ; ainsi que avg_win_dif = blue_winrates_avg - red_winrates_avg.
-
+Nous avons ensuite rajouté les variables correspondant à la moyenne du win rate (taux de victoire) et la moyenne du nombre de parties au seins d'une équipe : blue_winrates_avg et red_winrates_avg et blue_games_avg et red_games_avg ; ainsi que avg_win_dif = blue_winrates_avg - red_winrates_avg.
 
 
 ## Description des modèles de machine learning :
+
 Nous avons tout d'abord traité le jeu de données, notamment afin de remplacer les données manquantes.
 
 Nous avons utilisé une regression logistique étant donné que la variable à prédire est binaire. Nous avons obtenu une précision de 83%.
@@ -34,9 +39,6 @@ Nous avons utilisé une regression logistique étant donné que la variable à p
 Nous avons également fait des tests sur un modèle d'arbre de décision.
 Nous avons ensuite continué avec un modèle de random forest. Après avoir calibrer les hyperparamètres, nous avons obtenu une précision de 82%.
 
-Enjeu :
-
-Les joueurs peuvent quitter une « champ select » sans grande conséquence puisque la partie n’a pas encore démarré. Ainsi, le fait de pouvoir prédire le résultat avant même le début de la partie pourrait permettre d’éviter les parties a priori perdues d’avance, du fait d’une différence trop forte entre les deux équipes. 
 
 
 # Notebook Final
