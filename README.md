@@ -18,6 +18,8 @@ Nous avons choisis d'utiliser le win rate sur le champion choisis, ainsi que le 
 
 Nous avons donc contruit un dataframe de 3500 parties compétitives. Pour chaque partie, il y a le winrate de chaques joueurs sur le champion choisis ainsi que le nombre de partie joués avec ce champion.
 
+Nous avons ensuite rajouté les variables correspondant à la moyenne des features sur une équipe, c'est à dire blue_winrates_avg/red_winrates_avg ainsi que blue_games_avg/red_games_avg, ainsi que avg_win_dif = blue_winrates_avg-red_winrates_avg.
+
 
 
 ## Description of our ML models :
