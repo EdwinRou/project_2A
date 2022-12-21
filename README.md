@@ -10,6 +10,10 @@ Les 5 joueurs d'une même équipe ont chacun un rôle différent : Top, Jungle, 
 Lors de la "champ select" chaque joueur a un rôle prédeterminé et choisis son champion. Les pseudos et champions des 5 joueurs de chaque équipes sont visibles à la fin de celle-ci, quelques secondes avant le lancement d'une partie.
 Notre objectif est d'utiliser seulement ces paramètres et d'essayer de prédire le résultat de la partie.
 
+## Problématique :
+
+Quelles caractéristiques sur les joueurs permettent de prédire le résultat d'une partie sur League of Legends?
+
 ## Description de notre stratégie pour créer le dataset :
 
 Tout d'abord nous avons utilisé l'Api de Riot, l'éditeur du jeu, afin de construire une base de donnée de parties compétitves à haut elo.
@@ -18,7 +22,7 @@ Nous avons choisis d'utiliser le win rate sur le champion choisis, ainsi que le 
 
 Nous avons donc contruit un dataframe de 3500 parties compétitives. Pour chaque partie, il y a le winrate de chaques joueurs sur le champion choisis ainsi que le nombre de partie joués avec ce champion.
 
-Nous avons ensuite rajouté les variables correspondant à la moyenne des features sur une équipe, c'est à dire blue_winrates_avg/red_winrates_avg ainsi que blue_games_avg/red_games_avg, ainsi que avg_win_dif = blue_winrates_avg-red_winrates_avg.
+Nous avons ensuite rajouté les variables correspondant à la moyenne win rates (taux de victoire) et la moyenne du nombre de parties pour chaque équipe : blue_winrates_avg et red_winrates_avg et blue_games_avg et red_games_avg ; ainsi que avg_win_dif = blue_winrates_avg - red_winrates_avg.
 
 
 
@@ -26,4 +30,6 @@ Nous avons ensuite rajouté les variables correspondant à la moyenne des featur
 
 
 # Notebook Final
+
+Le Notebook final contient la majeure partie de notre projet, certains programmes ont été mis à part pour alléger le rendu, notamment la partie utilisant l'API qui se trouve dans le dossier RiotApi ainsi que les programmes permettant de modéliser les graphiques dans la partie II.
 https://github.com/EdwinRou/project_2A/blob/c394133911422b427097f026cda09cf85f6d9f1b/Notebook.ipynb
