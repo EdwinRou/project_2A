@@ -5,7 +5,7 @@ Le but du projet est d'utiliser divers methodes de machine learning afin de pré
 
 ## Description du jeu League of Legends :
 
-Ce jeu se joue en 5 contre 5 sur une unique map, avec un Blue side et un Red dide. Le jeu possède un très grand nombre de personnages différents, appelés champions.
+Ce jeu se joue en 5 contre 5 sur une unique map, avec un Blue side et un Red side. Le jeu possède un très grand nombre de personnages différents, appelés champions.
 Les 5 joueurs d'une même équipe ont chacun un rôle différent : Top, Jngl, Mid, Carry, Support.
 Lors de la "champ select" chaque joueur a un rôle prédeterminé et choisis son champion. Les pseudos et champions des 5 joueurs de chaque équipes sont visibles à la fin de celle-ci, quelques secondes avant le lancement d'une partie.
 Notre objectif est d'utiliser seulement ces paramètres et d'essayer de prédire le résultat de la partie.
