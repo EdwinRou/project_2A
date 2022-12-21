@@ -10,7 +10,7 @@ Les 5 joueurs d'une même équipe ont chacun un rôle différent : Top, Jngl, Mi
 Lors de la "champ select" chaque joueur a un rôle prédeterminé et choisis son champion. Les pseudos et champions des 5 joueurs de chaque équipes sont visibles à la fin de celle-ci, quelques secondes avant le lancement d'une partie.
 Notre objectif est d'utiliser seulement ces paramètres et d'essayer de prédire le résultat de la partie.
 
-## Description of our strategy to create our data :
+## Description de notre stratégie pour créer le dataset :
 
 Tout d'abord nous avons utilisé l'Api de Riot, l'éditeur du jeu, afin de construire une base de donnée de parties compétitves à haut elo.
 Ensuite nous avons utilisé des méthodes de scraping sur le site [https://www.leagueofgraphs.com/ ](https://www.leagueofgraphs.com/fr/) afin de récupérer des features intéressantes sur le profil des joueurs.
